@@ -6,7 +6,7 @@ const {
   DB_USERNAME, DB_PASSWORD, DB_HOST, DB_NAME,
 } = process.env;
 
-const sequelize = new Sequelize(`postgres://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`, {
+const sequelize = new Sequelize(`postgres://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}.oregon-postgres.render.com/${DB_NAME}`, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, 
   dialectOptions: {
