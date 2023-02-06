@@ -1,0 +1,60 @@
+.slideContainer{
+    .slideMenu{
+        position: absolute;
+        width: 100%;
+        min-height: 4rem;
+        z-index: 2;
+    }
+    .slider{
+        width: 100vw;
+        height: 45vw;
+        background-color: #000;
+        position: relative;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+        animation: cambio 10s alternate;
+        input{
+            position: relative;
+            margin-left: 2vw;
+            z-index: 2;
+            opacity: 0.5;
+            &:checked ~ img{
+                opacity: 1;
+            }
+        }
+        img{
+            transition: all 0.5s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+        }
+    }
+}
+@keyframes cambio {
+    0%{
+        
+    }
+    30%{
+
+    }
+
+    33%{
+        
+    }
+    66%{
+
+    }
+
+    69%{
+
+    }
+    100%{
+
+    }
+
+}
